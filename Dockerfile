@@ -10,7 +10,7 @@ RUN git clone https://gitlab.com/s.casatorres/mine-server-bot.git
 # Bundle APP files
 COPY src src/
 COPY package.json .
-COPY ecosystem.config.js .
+COPY ecosystem.config.json .
 COPY index.js .
 
 # Install app dependencies
@@ -21,4 +21,4 @@ RUN npm install --production
 # Show current folder structure in logs
 RUN ls -al -R
 
-CMD ["pm2-runtime", "index.js", "ecosystem.config.js", "--env", "production"]
+CMD ["pm2-runtime", "start", "ecosystem.config.json", "--env", "production"]
