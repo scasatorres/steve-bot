@@ -1,8 +1,8 @@
-FROM keymetrics/pm2:latest-alpine
+FROM keymetrics/pm2:latest-stretch
 WORKDIR /usr/mine-server-bot
 
 # Install git
-RUN apt-get install git
+RUN apt update && apt install -y git
 
 # Clone project
 RUN git clone https://gitlab.com/s.casatorres/mine-server-bot.git
