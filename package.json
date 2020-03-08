@@ -1,0 +1,24 @@
+{
+  "name": "mine-server-bot",
+  "version": "1.0.0",
+  "description": "A minecraft server telegram bot.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm i && npm start",
+    "start": "node index.js",
+    "dev": "env-cmd -f ./config/.env nodemon --inspect index.js"
+  },
+  "author": "Sergio Casatorres",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "got": "^10.6.0",
+    "ping": "^0.2.2",
+    "telegraf": "^3.36.0",
+    "telegraf-i18n": "^6.6.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.2"
+  }
+}

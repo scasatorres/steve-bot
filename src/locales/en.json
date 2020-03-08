@@ -1,0 +1,31 @@
+{
+  "messages": {
+    "greeting": "Hi there! I can help you with a minecraft server related tasks.\n",
+    "help": "You can control me by sending these commands:\n",
+    "choose-language": "Please, choose your language:",
+    "language-selected": "Language successfully changed!",
+    "server-address": "Here's the minecraft server address:\n",
+    "server-map": "Here's the minecraft server live map:\n",
+    "map": "Map 🗺",
+    "server-status": "The minecraft server is currently: \n",
+    "server-status-online": "ONLINE 💚\n",
+    "server-status-offline": "OFFLINE 💔\n",
+    "server-status-problem": "Looks like the server is down, being rebooted or under maintenance.",
+    "contact-us": "If there's any problem, please contact us and we'll check it as soon as possible!",
+    "en": "English",
+    "es": "Spanish",
+    "cancel": "The command has been cancelled. Anything else I can do for you?",
+    "payment-reminder": "*IMPORTANT: Remember to add your minecraft username on payment info*.\nBy now, we need to check manually who paid to add him/her to server's whitelist users, but we're working on it to automate it!\n",
+    "payment-url": "Here's the minecraft server payment url:\n",
+    "pay": "Make it rain 💸"
+  },
+  "commands": {
+    "help": "/help - shows commands list",
+    "changelanguage": "/changelanguage - changes bot language",
+    "getserveraddress": "/getserveraddress - get minecraft server address",
+    "getservermap": "/getservermap - get minecraft server live map",
+    "getserverstatus": "/getserverstatus - get minecraft server status",
+    "getpaymenturl": "/getpaymenturl - get payment url",
+    "contactus": "/contactus - get contact info"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "messages": {
+    "greeting": "¡Buenas! Puedo ayudarte con tareas relacionadas con un servidor de minecraft.\n",
+    "help": "Puedes controlarme enviándome estos comandos:\n",
+    "choose-language": "Por favor, elige tu idioma:",
+    "language-selected": "¡Idioma cambiado correctamente!",
+    "server-address": "Esta es la dirección del servidor de minecraft:\n",
+    "server-map": "Este es el mapa en directo del servidor de minecraft:\n",
+    "map": "Mapa 🗺",
+    "server-status": "El servidor de minecraft está: \n",
+    "server-status-online": "ONLINE 💚\n",
+    "server-status-offline": "OFFLINE 💔\n",
+    "server-status-problem": "Parece que el servidor está caido, reiniciándose o en mantenimiento.",
+    "contact-us": "Si hay algún problema, ¡ponte en contacto con nosotros y le echaremos un vistazo lo antes posible!",
+    "en": "Inglés",
+    "es": "Español",
+    "cancel": "El comando ha sido cancelado. ¿Hay algo más que pueda hacer por ti?",
+    "payment-reminder": "*IMPORTANTE: Recuerda añadir tu usuario de minecraft en la información del pago*.\nPor ahora, necesitamos comprobar manualmente quién ha pagado para añadirle a la whitelist de usuarios del servidor, ¡pero estamos trabajando en ello para automatizarlo!\n",
+    "payment-url": "Aquí tienes la url del pago del servidor de minecraft:\n",
+    "pay": "¡PAGA!, ¡PAGA!, ¡PAGA! 💸"
+  },
+  "commands": {
+    "help": "/help - muestra el listado de comandos",
+    "changelanguage": "/changelanguage - cambia el idioma del bot",
+    "getserveraddress": "/getserveraddress - devuelve la dirección del servidor de minecraft",
+    "getservermap": "/getservermap - devuelve un enlace al mapa en directo del servidor de minecraft",
+    "getserverstatus": "/getserverstatus - devuelve el estado del servidor de minecraft",
+    "getpaymenturl": "/getpaymenturl - devuelve la url del pago",
+    "contactus": "/contactus - muestra la información de contacto"
+  }
+}
