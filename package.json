@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm i && npm start",
     "start": "node index.js",
-    "dev": "env-cmd -f ./config/.env nodemon --inspect index.js"
+    "dev": "env-cmd -f ./config/.env.dev nodemon --inspect index.js"
   },
   "author": "Sergio Casatorres",
   "license": "ISC",
