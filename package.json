@@ -1,5 +1,5 @@
 {
-  "name": "mine-server-bot",
+  "name": "steve-bot",
   "version": "1.0.0",
   "description": "A minecraft server telegram bot.",
   "main": "index.js",
@@ -8,8 +8,16 @@
     "start": "node index.js",
     "dev": "env-cmd -f ./config/.env.dev nodemon --inspect index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/s.casatorres/steve-bot.git"
+  },
   "author": "Sergio Casatorres",
   "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/s.casatorres/steve-bot/issues"
+  },
+  "homepage": "https://gitlab.com/s.casatorres/steve-bot#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
     "got": "^10.6.0",
