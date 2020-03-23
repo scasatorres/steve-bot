@@ -1,5 +1,5 @@
 FROM keymetrics/pm2:latest-stretch
-WORKDIR /usr/mine-server-bot
+WORKDIR /usr/steve-bot
 
 # Install git
 RUN apt update && apt install -y git
