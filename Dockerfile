@@ -5,7 +5,7 @@ WORKDIR /usr/mine-server-bot
 RUN apt update && apt install -y git
 
 # Clone project
-RUN git clone https://gitlab.com/s.casatorres/mine-server-bot.git
+RUN git clone https://gitlab.com/s.casatorres/steve-bot.git
 
 # Bundle APP files
 COPY src src/
