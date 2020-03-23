@@ -20,4 +20,4 @@ RUN npm install --production
 # Show current folder structure in logs
 RUN ls -al -R
 
-CMD ["pm2-runtime", "start"]
+CMD ["pm2-runtime", "index.js"]
