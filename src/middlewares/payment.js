@@ -4,7 +4,6 @@ const Extra = require('telegraf/extra');
 const payment = (ctx, next) => {
   const { PAYMENT_URL } = process.env;
   const messages = [
-    ctx.i18n.t('messages.payment-reminder'),
     ctx.i18n.t('messages.payment-url')
   ];
   const paymentButtonText = ctx.i18n.t('messages.pay');

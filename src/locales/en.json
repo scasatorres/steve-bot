@@ -15,8 +15,7 @@
     "en": "English",
     "es": "Spanish",
     "cancel": "The command has been cancelled. Anything else I can do for you?",
-    "payment-reminder": "*IMPORTANT: Remember to add your minecraft username on payment info*.\nBy now, we need to check manually who paid to add him/her to server's whitelist users, but we're working on it to automate it!\n",
-    "payment-url": "Here's the minecraft server payment url:\n",
+    "payment-url": "Here's the minecraft server payment url!\n",
     "pay": "Make it rain 💸"
   },
   "commands": {
