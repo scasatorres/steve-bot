@@ -13,20 +13,20 @@ const serverAddress = (ctx, next) => {
 };
 
 const serverMap = (ctx, next) => {
-  const { SERVER_ADDRESS, MAP_PORT } = process.env;
+  const { PROTOCOL, SERVER_ADDRESS, MAP_PATH, MAP_PORT } = process.env;
   const messages = [
     ctx.i18n.t('messages.server-map')
   ];
 
   return ctx.reply(messages.join('\n'), Extra.markup(
     Markup.inlineKeyboard([
-      Markup.urlButton(ctx.i18n.t('messages.map'), `${SERVER_ADDRESS}:${MAP_PORT}`)
+      Markup.urlButton(ctx.i18n.t('messages.map'), `${PROTOCOL}://${SERVER_ADDRESS}${MAP_PATH}:${MAP_PORT}`)
     ])
   ));
 };
 
 const serverStatus = async (ctx, next) => {
-  const { SERVER_ADDRESS } = process.env;
+  const { PROTOCOL, SERVER_ADDRESS } = process.env;
 
   const onlineMessage = ctx.i18n.t('messages.server-status-online');
   const offlineMessage = ctx.i18n.t('messages.server-status-offline');
@@ -36,7 +36,7 @@ const serverStatus = async (ctx, next) => {
     ctx.i18n.t('messages.server-status'),
   ];
 
-  const response = await ping.promise.probe(SERVER_ADDRESS, {
+  const response = await ping.promise.probe(`${PROTOCOL}://${SERVER_ADDRESS}`, {
     timeout: 20,
     extra: ["-i 2"],
   });
