@@ -13,7 +13,7 @@ const serverAddress = (ctx, next) => {
 };
 
 const serverMap = (ctx, next) => {
-  const { PROTOCOL, SERVER_ADDRESS, MAP_PATH, MAP_PORT } = process.env;
+  const { PROTOCOL, SERVER_ADDRESS, MAP_PATH } = process.env;
   const messages = [
     ctx.i18n.t('messages.server-map')
   ];
@@ -26,7 +26,7 @@ const serverMap = (ctx, next) => {
 };
 
 const serverStatus = async (ctx, next) => {
-  const { PROTOCOL, SERVER_ADDRESS } = process.env;
+  const { SERVER_IP } = process.env;
 
   const onlineMessage = ctx.i18n.t('messages.server-status-online');
   const offlineMessage = ctx.i18n.t('messages.server-status-offline');
@@ -36,7 +36,7 @@ const serverStatus = async (ctx, next) => {
     ctx.i18n.t('messages.server-status'),
   ];
 
-  const response = await ping.promise.probe(`${PROTOCOL}://${SERVER_ADDRESS}`, {
+  const response = await ping.promise.probe(`${SERVER_IP}`, {
     timeout: 20,
     extra: ["-i 2"],
   });
