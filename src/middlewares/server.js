@@ -20,7 +20,7 @@ const serverMap = (ctx, next) => {
 
   return ctx.reply(messages.join('\n'), Extra.markup(
     Markup.inlineKeyboard([
-      Markup.urlButton(ctx.i18n.t('messages.map'), `${PROTOCOL}://${SERVER_ADDRESS}${MAP_PATH}:${MAP_PORT}`)
+      Markup.urlButton(ctx.i18n.t('messages.map'), `${PROTOCOL}://${SERVER_ADDRESS}${MAP_PATH}`)
     ])
   ));
 };
